@@ -7,19 +7,21 @@
     padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
-header {
+.top-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-image: url("img/header-background.png");
     background-repeat: no-repeat;
     min-height: 780px;
-    display: flex;
-    justify-content: center;
+    width: 100%;
 }
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+header {
     max-width: 1200px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .nav-bar {
     display: flex;
@@ -31,10 +33,10 @@ header {
     display: flex;
     align-items: center;
 }
-.logo h1 {
+.logo h4 {
     color: #fff;
     margin-left: 15px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -42,26 +44,61 @@ header {
 }
 .nav-buttons ul {
     display: flex;
+    align-items: center;
 }
-.nav-buttons li {
+.list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--white);
     list-style-type: none;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 23px;
     line-height: 60px;
     text-align: center;
-    margin-left: 61px;
+    margin-left: 62px;
 }
 .custom-button {
     border: 1px solid var(--orange-main);
-    width: 120px;
-    height: 50px;
-    font-family: 'Roboto';
+    border-radius: 5%;
+    width: 118px;
+    height: 48px;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 23px;
     line-height: 27px;
-    text-align: center;
+}
+.survival-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 122px;
+}
+.survival-section h1 {
+    color: var(--orange-main);
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 72px;
+    letter-spacing: 2px;
+}
+.survival-section p {
+    color: var(--white);
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 50px;
+}
+.donate-button {
+    margin-top: 49px;
+    width: 160px;
+    height: 60px;
+    background-color: var(--orange-main);
 }
