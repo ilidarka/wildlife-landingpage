@@ -35,7 +35,7 @@ header {
     align-items: center;
 }
 .logo h4 {
-    color: #fff;
+    color: var(--white);
     margin-left: 15px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -62,7 +62,7 @@ header {
 }
 .custom-button {
     border: 1px solid var(--orange-main);
-    border-radius: 5%;
+    border-radius: 0px 5px 5px 0px;
     width: 118px;
     height: 48px;
     font-family: 'Roboto', sans-serif;
@@ -103,7 +103,8 @@ header {
 main{
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .articles {
     margin-top: 120px;
@@ -158,4 +159,99 @@ main{
 }
 .slider-arrow {
     margin-right: 60px;
+}
+.notification-form {
+    margin-top: 236px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.notification-form h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 40px;
+}
+.input-button {
+    margin-top: 60px;
+    display: flex;
+}
+.input-button input {
+    width: 525px;
+    height: 60px;
+    border: none;
+    border-left: 1px solid #666;
+    border-top: 1px solid #666;
+    border-right: 1px solid #666;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 27px;
+    color: #666;
+    padding-left: 15px;
+}
+.input-button .send-button {
+    width: 120px;
+    height: 60px;
+    background-color: var(--orange-main);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 27px;
+}
+footer {
+    margin-top: 240px;
+    min-height: 359px;
+    width: 100%;
+    background-image: url("img/footer-image.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-container {
+    color: var(--white);
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+.footer-logo h4 {
+    margin-left: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 60px;
+}
+.links ul {
+    list-style-type: none;
+    display: flex;
+    margin-left: 138px;
+}
+.links-list-item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 60px;
+    margin-right: 86px;
+}
+.links-list-item:last-child {
+    margin-right: 0;
+}
+.socials {
+    display: flex;
+    margin-left: 127px;
+}
+.social-item {
+    margin-right: 27px;
+}
+.social-item:last-child {
+    margin-right: 0;
 }
